@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+        <nav> 
+            <h1>ToDo List App</h1>
+            <ul>
+                <li><a href="https://www.instagram.com/kucherooov/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://github.com/kucherov02" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul> 
+        </nav>
+    <div class="main">
+         <form>
+              <h2 class="write">Write something</h2>
+              <div class="adding">
+              <input type="text" class = "todo-input">
+              <button class="todo-button" type="submit">
+                <i class="fas fa-plus"></i>
+              </button>
+              </div>
+              <div class="select">
+                <select name="todos" class="filter-todo">
+                 <option value="all">ALL</option>
+                 <option value="completed">Completed</option>
+                 <option value="uncompleted">Uncompleted</option>
+                </select>
+              </div>
+          </form>
+          <div class="todo-container">
+              <ul class="todo-list"></ul>
+          </div>
+    </div>
+          
+    <script src="./script.js"></script>
+</body>
+</html>
